@@ -37,3 +37,13 @@ function ShowStory() {
     }
 }
 
+//The story gets displayed however it stays the same , creating a reset button funciton to reset the story
+//when the reset button is clicked 
+resetButton.addEventListener('click', function() { //whenever the reset button is clicked 
+    
+    document.querySelectorAll('.wordshow').forEach(display => {
+        display.textContent = '____';
+    });
+    storyText.textContent = '';
+});
+
