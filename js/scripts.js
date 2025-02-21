@@ -19,9 +19,21 @@ getWordButtons.forEach(button => {
         //randomly selects a word from the array and displys it 
         const randomWord = wordList[Math.floor(Math.random() * wordList.length)];
         document.getElementById(`word${section}`).textContent = randomWord;
-        updateStory();
+        ShowStory();
     });
 });
 
+//Function to update the story text 
+function ShowStory() {
+    //creaating word1, word2 and word3 variables to store the text 
+    const word1 = document.getElementById('word1').textContent;
+    const word2 = document.getElementById('word2').textContent;
+    const word3 = document.getElementById('word3').textContent;
+    // checking if all 3 words have been selcted.
+    if (word1 !== '____' && word2 !== '____' && word3 !== '____') {
+        //If so then the story gets displayed., once all 3 words have been selected
 
+        storyText.textContent = `The ${word1} ${word2} ${word3}`;
+    }
+}
 
