@@ -20,23 +20,28 @@
         <h1 class="SeeNSayTitle">SEE 'N' SAY STORYMAKER</h1>
         <div class="playcontainer">
             <h2>Let's create a story!</h2>
+            <!-- This div will contain the sections that will allow user to click and get parts of the story. -->
             <div class="storemakerdiv">
+                <!-- Div for the first part of the story -->
                 <div class="section" id="section1">
                     <h2>The Adjective</h2>
                     <div class="wordshow" id="word1">____</div>
                     <button class="gertword" data-section="1">CLICK!</button>
                 </div>
+                <!-- Div for the second part of the story -->
                 <div class="section" id="section2">
                     <h2>The Noun</h2>
                     <div class="wordshow" id="word2">____</div>
                     <button class="getword" data-section="2">CLICK!</button>
                 </div>
+                <!-- Div for the third part of the story -->
                 <div class="section" id="section3">
                     <h2>The Verb</h2>
                     <div class="wordshow" id="word3">____</div>
                     <button class="getword" data-section="3">CLICK!</button>
                 </div>
             </div>
+            <!-- This div will contain the story that will be created by the user. -->
             <div class="storydiv">
                 <h2>Your Ultimate Lore :</h2>
                 <p id="storyText" class="story-text"></p>
@@ -44,6 +49,7 @@
             </div>
         </div>
     </div>
+    <!-- Linking the javascript file to the html file. -->
     <script src="../js/script.js"></script>
 </body>
 </html>
